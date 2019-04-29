@@ -72,4 +72,4 @@ typings/
 sw.*
 
 # conf
-.conf
+conf/
