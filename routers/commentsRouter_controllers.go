@@ -52,7 +52,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["goServers/controllers:UserController"] = append(beego.GlobalControllerRouter["goServers/controllers:UserController"],
+    beego.GlobalControllerRouter["goServers/controllers:UsersController"] = append(beego.GlobalControllerRouter["goServers/controllers:UsersController"],
         beego.ControllerComments{
             Method: "Post",
             Router: `/`,
@@ -61,7 +61,7 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["goServers/controllers:UserController"] = append(beego.GlobalControllerRouter["goServers/controllers:UserController"],
+    beego.GlobalControllerRouter["goServers/controllers:UsersController"] = append(beego.GlobalControllerRouter["goServers/controllers:UsersController"],
         beego.ControllerComments{
             Method: "GetAll",
             Router: `/`,
@@ -70,47 +70,29 @@ func init() {
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["goServers/controllers:UserController"] = append(beego.GlobalControllerRouter["goServers/controllers:UserController"],
+    beego.GlobalControllerRouter["goServers/controllers:UsersController"] = append(beego.GlobalControllerRouter["goServers/controllers:UsersController"],
         beego.ControllerComments{
-            Method: "Get",
-            Router: `/:uid`,
+            Method: "GetOne",
+            Router: `/:id`,
             AllowHTTPMethods: []string{"get"},
             MethodParams: param.Make(),
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["goServers/controllers:UserController"] = append(beego.GlobalControllerRouter["goServers/controllers:UserController"],
+    beego.GlobalControllerRouter["goServers/controllers:UsersController"] = append(beego.GlobalControllerRouter["goServers/controllers:UsersController"],
         beego.ControllerComments{
             Method: "Put",
-            Router: `/:uid`,
+            Router: `/:id`,
             AllowHTTPMethods: []string{"put"},
             MethodParams: param.Make(),
             Filters: nil,
             Params: nil})
 
-    beego.GlobalControllerRouter["goServers/controllers:UserController"] = append(beego.GlobalControllerRouter["goServers/controllers:UserController"],
+    beego.GlobalControllerRouter["goServers/controllers:UsersController"] = append(beego.GlobalControllerRouter["goServers/controllers:UsersController"],
         beego.ControllerComments{
             Method: "Delete",
-            Router: `/:uid`,
+            Router: `/:id`,
             AllowHTTPMethods: []string{"delete"},
-            MethodParams: param.Make(),
-            Filters: nil,
-            Params: nil})
-
-    beego.GlobalControllerRouter["goServers/controllers:UserController"] = append(beego.GlobalControllerRouter["goServers/controllers:UserController"],
-        beego.ControllerComments{
-            Method: "Login",
-            Router: `/login`,
-            AllowHTTPMethods: []string{"get"},
-            MethodParams: param.Make(),
-            Filters: nil,
-            Params: nil})
-
-    beego.GlobalControllerRouter["goServers/controllers:UserController"] = append(beego.GlobalControllerRouter["goServers/controllers:UserController"],
-        beego.ControllerComments{
-            Method: "Logout",
-            Router: `/logout`,
-            AllowHTTPMethods: []string{"get"},
             MethodParams: param.Make(),
             Filters: nil,
             Params: nil})
